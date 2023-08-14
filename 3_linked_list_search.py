@@ -3,13 +3,20 @@ class listNode:
         self.value = value
         self.next = None
 
+# def search(head, value):
+#     current = head
+#     while(current is not None):
+#         if(current.value == value):
+#             return True
+#         current = current.next
+#     return False
+
 def search(head, value):
-    current = head
-    while(current is not None):
-        if(current.value == value):
-            return True
-        current = current.next
-    return False
+    if head is None:
+        return False
+    if head.value == value:
+        return True
+    return search(head.next, value)
 
 
 # This function searches a linked list built from the provided listNode class, returning True if an element is found in the linked list. It returns False otherwise.
@@ -17,7 +24,7 @@ def search(head, value):
 # Convert it to a recursive solution, i.e., the search function must call itself instead of using a loop.
 
 # Hint: what is the base case?
-
+    # Found the value or reached the end of the list without finding the value
 
 
 

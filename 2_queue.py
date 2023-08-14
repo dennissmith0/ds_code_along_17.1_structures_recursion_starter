@@ -2,13 +2,16 @@ from collections import deque
 
 class queue:
     def __init__(self):
-        pass
+        self.data = deque()
 
     def enqueue(self, value):
-        pass
+        self.data.append(value)
 
     def dequeue(self):
-        pass
+        if len(self.data) > 0:
+            return self.data.popleft()
+        else:
+            return None
 
 # Test cases:
 myQueue = queue()
