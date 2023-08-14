@@ -2,13 +2,16 @@ from collections import deque
 
 class stack:
     def __init__(self):
-        pass
+        self.pancakes = deque()
 
     def push(self, value):
-        pass
+        self.pancakes.append(value)
 
     def pop(self):
-        pass
+        if len(self.pancakes) > 0:
+            return self.pancakes.pop()
+        else:
+            return None
 
 # Test cases:
 myStack = stack()
