@@ -24,9 +24,7 @@ def search(head, value):
 # Convert it to a recursive solution, i.e., the search function must call itself instead of using a loop.
 
 # Hint: what is the base case?
-    # Found the value or reached the end of the list without finding the value
-
-
+    # Found the value or reached the end of the list
 
 # Test cases:
 head = listNode(3)
